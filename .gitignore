@@ -1,6 +1,6 @@
-*
+/*
 !.gitignore
-!fecshop.com/*
-!main/*
+!/fecshop.com/
+!/main/
 !README.md
 !/test
