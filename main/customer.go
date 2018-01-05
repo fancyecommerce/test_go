@@ -3,7 +3,6 @@ package main
 import(
     "github.com/gin-gonic/gin"
     "net/http"
-    f_customer "fecshop.com/customer"
     "fecshop.com/module/user" 
     _ "fmt"  
     _ "github.com/go-sql-driver/mysql" 
