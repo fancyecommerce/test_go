@@ -4,14 +4,14 @@ import (
     _ "fmt"
     "github.com/gin-gonic/gin"
     "net/http"
-    "fecshop.com/common" 
+    "fecshop.com/common/cdb" 
     "fecshop.com/model" 
     "database/sql"
 )
 
 func List(c *gin.Context) {
     // 数据库连接
-    db, err := sql.Open("mysql", common.Mysql.MysqlDSN())
+    db, err := sql.Open("mysql", cdb.Mysql.MysqlDSN())
     if err != nil {  
         panic(err.Error())  
     } 
@@ -24,8 +24,6 @@ func List(c *gin.Context) {
     data := model.User.Coll(db);
     c.JSON(http.StatusOK, data)
 }
-
-
 
 
 
