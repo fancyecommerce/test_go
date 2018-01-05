@@ -2,7 +2,7 @@ package main
 
 import(
     "github.com/gin-gonic/gin"
-    "net/http"
+    // "net/http"
     "fecshop.com/module/user" 
     _ "fmt"  
     _ "github.com/go-sql-driver/mysql" 
@@ -15,10 +15,8 @@ func main() {
     r.GET("/user/list", user.List)
     
     /*
-    r.GET("/customer/account/login", f_customer.AccountLogin)
-    r.GET("/customer/account/register", f_customer.AccountRegister)
-	r.Run("120.24.37.249:3000") // listen and serve on 0.0.0.0:8080
-    
+    //r.GET("/customer/account/login", f_customer.AccountLogin)
+    //r.GET("/customer/account/register", f_customer.AccountRegister)
     r.GET("/ping", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"message": "pong",
@@ -30,6 +28,8 @@ func main() {
         })
     })
     */
+    r.Run("120.24.37.249:3000") // listen and serve on 0.0.0.0:8080
+    
 }
 
 

@@ -13,11 +13,6 @@ type BaseUser struct {
 var User BaseUser;
 
 func (user BaseUser) Coll(db *sql.DB) gin.H{
-    data := list(db)
-    return data
-}
-
-func list(db *sql.DB) gin.H{
     body := make(gin.H)
     rows, err := db.Query("SELECT * From user")  
     if err != nil {
@@ -36,8 +31,7 @@ func list(db *sql.DB) gin.H{
             "age": userOne.age,
         }
         dbdata = append(dbdata, dd)
-    }  
-    
+    } 
     err = rows.Err()  
     if err != nil {  
         panic(err.Error())  
