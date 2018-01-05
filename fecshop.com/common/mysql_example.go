@@ -10,7 +10,7 @@ var Mysql Database
 func init(){
     Mysql.dbName      = "go_test"
     Mysql.user        = "root"
-    Mysql.pass        = "Zhaoyong20175555d"
+    Mysql.pass        = "xxx"
     Mysql.ip          = "127.0.0.1"
     Mysql.port        = "3306"
 }
