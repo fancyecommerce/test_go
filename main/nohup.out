@@ -1,0 +1,15 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /v1/users                 --> fecshop.com/module/user.List (3 handlers)
+[GIN-debug] POST   /v1/users                 --> fecshop.com/module/user.AddOne (3 handlers)
+[GIN-debug] PATCH  /v1/users/:id             --> fecshop.com/module/user.UpdateById (3 handlers)
+[GIN-debug] DELETE /v1/users/:id             --> fecshop.com/module/user.DeleteById (3 handlers)
+[GIN-debug] Listening and serving HTTP on 120.24.37.249:3000
+[GIN] 2018/01/06 - 09:47:01 | 200 |    1.473834ms |    183.11.38.28 | GET      /v1/users
+[GIN] 2018/01/06 - 09:47:03 | 200 |    9.911495ms |    183.11.38.28 | PATCH    /v1/users/8
+[GIN] 2018/01/06 - 09:47:12 | 200 |    9.500903ms |    183.11.38.28 | PATCH    /v1/users/8
+[GIN] 2018/01/06 - 09:47:14 | 200 |    8.174223ms |    183.11.38.28 | PATCH    /v1/users/8

@@ -2,6 +2,8 @@
 准备工作
 -----------
 
+> 从零开始，搭建golang环境，到做一个mysql的增删改查的api
+
 1.安装golang，参看：[安装golang](http://www.fancyecommerce.com/2017/12/28/centos6-%e5%ae%89%e8%a3%85-golang-1-9/)
 
 2.安装gin框架
