@@ -11,9 +11,14 @@ import(
 
 func main() { 
 	r := gin.Default()
-    // 查询部分
-    r.GET("/user/list", user.List)
-    
+    v1 := r.Group("/v1")
+    {
+        // 查询部分
+        v1.GET("/users", user.List)
+        v1.POST("/users", user.AddOne)
+        v1.PATCH("/users/:id", user.UpdateById)
+        v1.DELETE("/users/:id", user.DeleteById)
+    }
     /*
     //r.GET("/customer/account/login", f_customer.AccountLogin)
     //r.GET("/customer/account/register", f_customer.AccountRegister)
